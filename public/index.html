@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/main.css">
+    <title>Formulario</title>
+</head>
+<body>
+    <div class="formulario">
+        <h1>Agregar nuevo producto!</h1>
+        <form action="/api/productos" method="post">
+            <label for="title">Nombre Producto</label>
+            <br />
+            <input type="text" name="title">
+            <br /><br />
+            <label for="price">Precio</label>
+            <br />
+            <input type="number" name="price">
+            <br /><br />
+            <label for="thumbnail">Imagen (URL)</label>
+            <br />
+            <input type="text" name="thumbnail">
+            <br /><br />
+            <!-- <input type="submit" name="submit" class="botonInput" value="Agregar Producto"> -->
+            <button type="submit" class="botonInput">Agregar Producto</button>
+        </form>
+    </div>    
+</body>
+</html>
